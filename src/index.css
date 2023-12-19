@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0px;
+    box-sizing: border-box;
+    cursor:url('cursor_editit.png'),auto;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.numinput{
+    background:linear-gradient(45deg,#CAF0F8,#90E0EF);
+    border-style: none;
+    margin-left:30vw;
+    margin-top:7vh;
+    height:20vh;
+    color:#0077B6;
+    box-sizing: border-box;
+   padding-left:10%;
+}
+#complbutton{
+    margin-left:30px;
+    width:40vw;
+    background-color:#90e0ef;
+}
+#img1{
+    margin-top: 80px;
+    height:50vh;
+}
+.labelnuminputcomp{
+    font-size: 32px;
+}
+.numinput:hover{
+    border-style: none;
+}
+.numinput:active{
+    border-style: none;
+}
+.comphead{
+    margin-left:27vw;
+}
+.primehead{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+label:hover{
+    cursor:url('cursor_editit.png'),auto;
+}
+.primecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.primeresult{
+    display: inline-block;
+    margin-left:5px;
+    font-size: 24px;
+}
+.primeh1{
+    font-size: 56px;
+    font-weight: 900;
+}
+body{
+    cursor:url('cursor_editit.png'),auto;
+}
+#primenumid{
+    background-color: #00509d;
+    font-size:24px;
+    color:#90e0ef;
 }

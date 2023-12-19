@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './Navbar'
+import PropTypes from 'prop-types'
+import Complement from './Complement';
+import TextForm from './Textform';
+import {useState} from 'react'
+import Primecheck from './Primecheck';
+import { Route, Routes } from 'react-router-dom';
 function App() {
+  document.body.style.backgroundColor="#03045e";
+  document.body.style.color = "#0077B6"; 
+  document.body.style.height='100vh';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Navbar title="Edit It" about="Features Offered"/>
+        <div className="container my-3">
+        </div>
+      </div>
+      <Routes>
+        <Route path="/text" element={<TextForm/>} />
+        <Route path="/" element={<Primecheck/>} />
+        <Route path="/comp" element={<Complement/>} />
+      </Routes>
+    </>
   );
 }
-
 export default App;
